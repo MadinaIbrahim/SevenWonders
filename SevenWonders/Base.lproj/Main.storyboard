@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y29-z8-tyH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Seven Wonders View Controller-->
+        <scene sceneID="8wB-FE-5SQ">
+            <objects>
+                <viewController id="jhG-U4-qU7" customClass="SevenWondersViewController" customModule="SevenWonders" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zke-Vp-LD2"/>
+                        <viewControllerLayoutGuide type="bottom" id="msA-sL-zNo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8c-hj-nMp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seven Wonders of the Solar System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-6V-9sG">
+                                <rect key="frame" x="0.0" y="594" width="414" height="27"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-3t-3nj">
+                                <rect key="frame" x="0.0" y="472" width="200" height="123"/>
+                                <state key="normal" backgroundImage="abelt_gaspra"/>
+                                <connections>
+                                    <action selector="AbeltButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="ONR-Lw-PgJ"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="AbeltSegue" id="0DS-kg-ONv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrl-bm-yPb">
+                                <rect key="frame" x="0.0" y="274" width="200" height="201"/>
+                                <state key="normal" backgroundImage="encel_large"/>
+                                <connections>
+                                    <action selector="EncelButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="tBg-jS-r30"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="EncelSegue" id="5eb-5Y-Eno"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojE-45-o5i">
+                                <rect key="frame" x="198" y="428" width="216" height="167"/>
+                                <state key="normal" backgroundImage="mars-olympus-mons">
+                                    <color key="titleColor" red="0.84661458329999995" green="0.84661458329999995" blue="0.84661458329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OlympusButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="5xE-AS-oNY"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="OlimpusSegue" id="iZ5-0h-ARU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q59-Uy-tOG">
+                                <rect key="frame" x="0.0" y="64" width="200" height="211"/>
+                                <state key="normal" backgroundImage="Jupiter-close-430x430"/>
+                                <connections>
+                                    <action selector="RedspotButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="pU3-j2-JUL"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="RedspotSegue" id="Pqr-ew-zmw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFr-cl-aRl">
+                                <rect key="frame" x="188" y="64" width="224" height="202"/>
+                                <state key="normal" backgroundImage="ocean"/>
+                                <connections>
+                                    <action selector="OceansButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="7RA-Zt-khq"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="OceansSegue" id="Kvn-Lj-unT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vS-uI-HtE">
+                                <rect key="frame" x="0.0" y="617" width="414" height="119"/>
+                                <state key="normal" backgroundImage="sun_xray"/>
+                                <connections>
+                                    <action selector="SunButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="wQW-L5-nVX"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="SunSegue" id="7AB-mI-5JN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-zV-QMI">
+                                <rect key="frame" x="198" y="250" width="215" height="179"/>
+                                <state key="normal" backgroundImage="saturn_planet"/>
+                                <connections>
+                                    <action selector="SaturnButtonTapped:" destination="jhG-U4-qU7" eventType="touchUpInside" id="77f-0x-k5O"/>
+                                    <segue destination="tYb-UQ-Lj5" kind="show" identifier="SaturnSegue" id="xmh-JJ-Pd3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yeh-QW-Am2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wlc-HS-Zy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="358"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dNB-Si-Rlk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y29-z8-tyH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q4i-Fe-C6b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jhG-U4-qU7" kind="relationship" relationship="rootViewController" id="6S7-ek-gV2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uW-dF-O7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="290"/>
+        </scene>
+        <!--Seven Wonders Detail View Controller-->
+        <scene sceneID="FKm-rU-pOQ">
+            <objects>
+                <viewController id="tYb-UQ-Lj5" userLabel="Seven Wonders Detail View Controller" customClass="SevenWondersDetailViewController" customModule="SevenWonders" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oCp-dO-bZ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="UMq-jv-423"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N72-SF-OU2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-7D-trK" userLabel="wonderImage">
+                                <rect key="frame" x="81" y="46" width="252" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="imageDescriptionLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT4-tK-Muy">
+                                <rect key="frame" x="52" y="254" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titleLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUi-mh-g3T" userLabel="Title">
+                                <rect key="frame" x="20" y="331" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sizeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwZ-f6-7ik">
+                                <rect key="frame" x="20" y="372" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="surfaceTemperatureLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J0-W4-Sec">
+                                <rect key="frame" x="20" y="415" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ageLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-vo-mJk">
+                                <rect key="frame" x="20" y="464" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="compositionLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-OY-R8y">
+                                <rect key="frame" x="20" y="512" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rotationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YT-K2-9Qa">
+                                <rect key="frame" x="20" y="560" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-El-VqL">
+                                <rect key="frame" x="20" y="608" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="otherLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwH-xm-EQj">
+                                <rect key="frame" x="20" y="656" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wonderLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-ST-eI3">
+                                <rect key="frame" x="81" y="302" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ImageDescriptionLabel" destination="JT4-tK-Muy" id="plW-sy-q1c"/>
+                        <outlet property="ageLabel" destination="rZa-vo-mJk" id="RN9-kz-Deu"/>
+                        <outlet property="compositionLabel" destination="gl7-OY-R8y" id="b0i-6y-5WZ"/>
+                        <outlet property="nameLabel" destination="dR1-El-VqL" id="7uC-FB-ZBw"/>
+                        <outlet property="otherLabel" destination="xwH-xm-EQj" id="nC0-3F-PpE"/>
+                        <outlet property="photo" destination="f2J-7D-trK" id="kwj-9n-y8e"/>
+                        <outlet property="rotationLabel" destination="4YT-K2-9Qa" id="aM0-mL-fob"/>
+                        <outlet property="sizeLabel" destination="jwZ-f6-7ik" id="0sr-pg-LdL"/>
+                        <outlet property="surfaceTemperatureLabel" destination="1J0-W4-Sec" id="DUJ-8Z-V1Q"/>
+                        <outlet property="titleLabel" destination="WUi-mh-g3T" id="SB2-C7-CQ5"/>
+                        <outlet property="wonderLabel" destination="9DV-ST-eI3" id="xLY-lX-Twv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYC-VO-v7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jupiter-close-430x430" width="430" height="430"/>
+        <image name="abelt_gaspra" width="400" height="332"/>
+        <image name="encel_large" width="400" height="400"/>
+        <image name="mars-olympus-mons" width="1200" height="675"/>
+        <image name="ocean" width="270" height="270"/>
+        <image name="saturn_planet" width="590" height="330"/>
+        <image name="sun_xray" width="595" height="188"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5eb-5Y-Eno"/>
+    </inferredMetricsTieBreakers>
+</document>
